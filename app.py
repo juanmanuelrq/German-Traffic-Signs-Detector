@@ -12,15 +12,11 @@ import shutil
 
 IMG_SIZE = 32 
 
-from tensorflow.contrib.layers import flatten
-
 
 @click.group()
 @click.option('--m', default=1, help='Model')
 def model(m):
     pass
-
-
 
 @model.command()
 def download():
